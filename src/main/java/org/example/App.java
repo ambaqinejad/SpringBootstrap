@@ -16,9 +16,6 @@ public class App
         ApplicationContext factory = new ClassPathXmlApplicationContext("applicationContext.xml");
         Alien a = factory.getBean("alien", Alien.class);
         a.code();
-        a.age = 27;
-        System.out.println(a.age);
-        Alien b = factory.getBean("alien", Alien.class);
-        System.out.println(b.age);
+        System.out.println(a.getAge());
     }
 }
