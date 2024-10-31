@@ -7,6 +7,6 @@
         <property name="age" value="10"></property>
 <!--        <property name="computer" ref="computer"></property>-->
     </bean>
-<!--    <bean id="computer" class="org.example.Laptop"></bean>-->
+    <bean id="computer" class="org.example.Laptop" primary="true"></bean>
     <bean id="desktop" class="org.example.Desktop"></bean>
 </beans>
